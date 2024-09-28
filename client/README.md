@@ -1,4 +1,4 @@
-# ecommerce_mobile_app
+# trandify_app
 
 A new Flutter project.
 

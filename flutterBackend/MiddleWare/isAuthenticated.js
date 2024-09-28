@@ -35,8 +35,18 @@ export const isAuthenticated = async (req, res, next) => {
 
 export const isAdmin = async (req, res, next) => {
   try {
-    const token = req.cookies.token;
+    // Extract the token from the Authorization header
+    const authHeader = req.headers["authorization"];
+    // Check if Authorization header is present and starts with "Bearer"
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      return res.status(401).json({ message: "User not authenticated" });
+    }
 
+    // Extract the token (remove "Bearer " part)
+    const token = authHeader.split(" ")[1];
+      console.log(token)
+    console.log("Token from Flutter:", token);
+    
     if (!token) {
       return res.status(401).json({ message: "user not authenticated" });
     }

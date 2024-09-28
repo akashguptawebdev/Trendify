@@ -1,7 +1,7 @@
-import 'package:ecommerce_mobile_app/Provider/user_provider.dart';
-import 'package:ecommerce_mobile_app/models/product_model.dart';
-import 'package:ecommerce_mobile_app/screens/Home/Widget/product_cart.dart';
-import 'package:ecommerce_mobile_app/screens/Home/Widget/search_bar.dart';
+import 'package:trandify_app/Provider/user_provider.dart';
+import 'package:trandify_app/models/product_model.dart';
+import 'package:trandify_app/screens/Home/Widget/product_cart.dart';
+import 'package:trandify_app/screens/Home/Widget/search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart'; // Import Provider package
 import '../../models/category.dart';
@@ -9,7 +9,7 @@ import 'Widget/image_slider.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
-import "package:ecommerce_mobile_app/Constant/BaseURL.dart";
+import "package:trandify_app/Constant/BaseURL.dart";
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 

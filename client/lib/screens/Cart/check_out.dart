@@ -1,5 +1,5 @@
-import 'package:ecommerce_mobile_app/Provider/add_to_cart_provider.dart';
-import 'package:ecommerce_mobile_app/constants.dart';
+import 'package:trandify_app/Provider/add_to_cart_provider.dart';
+import 'package:trandify_app/constants.dart';
 import 'package:flutter/material.dart';
 
 class CheckOutBox extends StatelessWidget {
@@ -65,7 +65,7 @@ class CheckOutBox extends StatelessWidget {
                 ),
               ),
               Text(
-                "\$${provider.totalPrice()}",
+                "\₹${provider.totalPrice()}",
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 16,
@@ -87,7 +87,7 @@ class CheckOutBox extends StatelessWidget {
                 ),
               ),
               Text(
-                "\$${provider.totalPrice()}",
+                "\₹${provider.totalPrice()}",
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18,

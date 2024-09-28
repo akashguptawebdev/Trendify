@@ -1,4 +1,4 @@
-import 'package:ecommerce_mobile_app/constants.dart';
+import 'package:trandify_app/constants.dart';
 import 'package:flutter/material.dart';
 
 class MySearchBAR extends StatelessWidget {

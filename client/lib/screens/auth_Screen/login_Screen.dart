@@ -1,7 +1,7 @@
-import 'package:ecommerce_mobile_app/Constant/colors.dart';
-import 'package:ecommerce_mobile_app/Provider/screen_Index.dart';
-import 'package:ecommerce_mobile_app/screens/Home/Widget/custom_textfield.dart';
-import 'package:ecommerce_mobile_app/screens/Home/Widget/my_Button.dart';
+import 'package:trandify_app/Constant/colors.dart';
+import 'package:trandify_app/Provider/screen_Index.dart';
+import 'package:trandify_app/screens/Home/Widget/custom_textfield.dart';
+import 'package:trandify_app/screens/Home/Widget/my_Button.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:velocity_x/velocity_x.dart';

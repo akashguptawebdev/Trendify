@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
-import "package:ecommerce_mobile_app/Constant/BaseURL.dart";
+import "package:trandify_app/Constant/BaseURL.dart";
 class AuthService {
   Future<Map<String, dynamic>> login(String email, String password) async {
     final url = Uri.parse('$baseUrl/api/v1/user/login');

@@ -16,7 +16,14 @@
 
 ## Live Demo
 
-Explore the Trendify app live on [Vercel](#) (Frontend) and [Render](#) (Backend).
+Explore the Trendify app live on [Vercel](#) (Frontend) and
+
+ [Render] (#https://trendify-o7au.onrender.com) (Backend).
+
+ - **BaseURL** 
+ [Render] (#https://trendify-o7au.onrender.com)
+  - you can change When you need to run backend on local system 
+  - It will take 50 sec on first API Call 
 
 ## Technology Stack
 
@@ -103,16 +110,6 @@ Follow these steps to set up Trendify locally:
 3. Set up environment variables (e.g., `MONGO_URI`, `JWT_SECRET`, `CLOUDINARY_URL`).
 4. Deploy your backend on Render.
 
-### Frontend on Vercel
-
-1. Build your Flutter web app using the following command:
-
-   ```bash
-   flutter build web
-   ```
-
-2. Push the build files to GitHub.
-3. Create a Vercel account, connect your GitHub repository, and deploy your web app.
 
 ## File Structure
 

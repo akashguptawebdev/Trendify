@@ -1,4 +1,4 @@
-import 'package:ecommerce_mobile_app/Provider/favorite_provider.dart';
+import 'package:trandify_app/Provider/favorite_provider.dart';
 import 'package:flutter/material.dart';
 import '../../constants.dart';
 

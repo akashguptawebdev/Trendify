@@ -1,5 +1,5 @@
-import 'package:ecommerce_mobile_app/Provider/screen_Index.dart';
-import 'package:ecommerce_mobile_app/Provider/user_provider.dart';
+import 'package:trandify_app/Provider/screen_Index.dart';
+import 'package:trandify_app/Provider/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';

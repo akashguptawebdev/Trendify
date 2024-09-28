@@ -1,4 +1,4 @@
-import 'package:ecommerce_mobile_app/Constant/colors.dart';
+import 'package:trandify_app/Constant/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 Widget custom_taxtField({String? title,String? hint , controller , }){

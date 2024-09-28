@@ -1,7 +1,7 @@
-import 'package:ecommerce_mobile_app/Provider/add_to_cart_provider.dart';
-import 'package:ecommerce_mobile_app/Provider/favorite_provider.dart';
-import 'package:ecommerce_mobile_app/Provider/screen_Index.dart';
-import 'package:ecommerce_mobile_app/Provider/user_provider.dart';
+import 'package:trandify_app/Provider/add_to_cart_provider.dart';
+import 'package:trandify_app/Provider/favorite_provider.dart';
+import 'package:trandify_app/Provider/screen_Index.dart';
+import 'package:trandify_app/Provider/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart'; // Import Get for navigation

@@ -1,5 +1,5 @@
-import 'package:ecommerce_mobile_app/Provider/add_to_cart_provider.dart';
-import 'package:ecommerce_mobile_app/screens/Cart/check_out.dart';
+import 'package:trandify_app/Provider/add_to_cart_provider.dart';
+import 'package:trandify_app/screens/Cart/check_out.dart';
 import 'package:flutter/material.dart';
 import '../../constants.dart';
 
@@ -116,7 +116,7 @@ class _CartScreenState extends State<CartScreen> {
                                 ),
                                 const SizedBox(height: 10),
                                 Text(
-                                  "\$${cartItems.price}",
+                                  "\₹${cartItems.price}",
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 14,
