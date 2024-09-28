@@ -9,7 +9,7 @@ import 'Widget/image_slider.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
-
+import "package:ecommerce_mobile_app/Constant/BaseURL.dart";
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
     }
 
     final url = Uri.parse(
-        'http://localhost:2850/api/v1/user/getUserProfile'); // Your user profile endpoint
+        '$baseUrl/api/v1/user/getUserProfile'); // Your user profile endpoint
     try {
       final response = await http.get(
         url,

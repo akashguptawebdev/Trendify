@@ -5,7 +5,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
 import 'dart:typed_data'; // For handling byte data
 import 'dart:convert'; // For better error handling
-
+import "package:ecommerce_mobile_app/Constant/BaseURL.dart";
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
 
@@ -66,7 +66,7 @@ class _SignupScreenState extends State<SignupScreen> {
     }
 
     // Backend API URL
-    final url = Uri.parse('http://localhost:2850/api/v1/user/register'); // Update with actual backend URL
+    final url = Uri.parse('$baseUrl/api/v1/user/register'); // Update with actual backend URL
 
     // Create multipart request
     var request = http.MultipartRequest('POST', url);

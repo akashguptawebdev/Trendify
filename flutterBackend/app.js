@@ -5,6 +5,7 @@ import bodyParser from "body-parser";
 import ErrorMiddleware from "./MiddleWare/ErrorMiddleware.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+
 dotenv.config();
 
 const app = express();
@@ -14,13 +15,17 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false })); // Helps to parse form data
 app.use(cookieParser());
-// CORS configuration to allow requests from specific origins
+
+// CORS configuration to allow requests from anywhere
 const corsOptions = {
-  origin: "*", // The front-end URL
-  credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+  origin: "*", // Allow all origins
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // Allow all methods
+  allowedHeaders: "Origin, X-Requested-With, Content-Type, Accept, Authorization", // Allow headers
 };
 
+// Enable CORS with the above configuration
 app.use(cors(corsOptions));
+
 // Routes
 app.use("/api/v1/user", UserRoutes);
 

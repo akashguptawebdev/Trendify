@@ -1,16 +1,18 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
-
+import "package:ecommerce_mobile_app/Constant/BaseURL.dart";
 class AuthService {
   Future<Map<String, dynamic>> login(String email, String password) async {
-    final url = Uri.parse('http://localhost:2850/api/v1/user/login');
+    final url = Uri.parse('$baseUrl/api/v1/user/login');
 
     final response = await http.post(
       url,
       headers: {
         'Content-Type': 'application/json',
-      },
+        
+      }
+      ,
       body: jsonEncode({
         'email': email,
         'password': password,
