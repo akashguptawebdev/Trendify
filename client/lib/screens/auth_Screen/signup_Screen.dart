@@ -1,10 +1,9 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
 import 'dart:typed_data'; // For handling byte data
-import 'dart:convert'; // For better error handling
+// For better error handling
 import "package:trandify_app/Constant/BaseURL.dart";
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
